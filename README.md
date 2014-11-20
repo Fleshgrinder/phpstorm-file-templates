@@ -13,7 +13,7 @@ by entering your credentials, following is an example with my data.
 #set( $AUTHOR_HOMEPAGE = 'http://richard.fussenegger.info/' )
 ```
 
-After that create a `.vtl` file for each of your projects in the inclusion tab of your PhpStorm. Or simplye create a
+After that create a `.vtl` file for each of your projects in the inclusion tab of your PhpStorm. Or simply create a
 `.vtl` file in the folder right away. It is important that the `.vtl` file has the exact same file name as your project.
 The following is an example project configuration.
 
@@ -40,6 +40,7 @@ you that the file does not contain any settings.
 That's it, you're good to go now.
 
 ## TODO
+* Create tickets for the various bugs related to conditionals in template files.
 * Create a program for easy generation of these files (either `.bat`, `.sh`, or even with Java).
 
 ## License
