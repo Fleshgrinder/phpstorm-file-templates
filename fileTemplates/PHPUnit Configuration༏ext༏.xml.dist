@@ -1,0 +1,28 @@
+#parse("Author.vtl")
+#parse("${PROJECT_NAME}.vtl")
+<?xml version="1.0" encoding="UTF-8"?>
+#if(${PROJECT_LICENSE})#parse("XML License ${PROJECT_LICENSE}.xml")#end
+<!--
+PHPUnit XML configuration for ${PROJECT_NAME}.
+
+AUTHOR: ${AUTHOR_NAME} <${AUTHOR_EMAIL}>
+COPYRIGHT: #if(${PROJECT_YEAR})${PROJECT_YEAR}#{else}${YEAR}#end #if(${PROJECT_COPYRIGHT})${PROJECT_COPYRIGHT}#{else}${AUTHOR_NAME}
+#end
+#if(${PROJECT_LICENSE})LICENSE: ${LICENSE_URL} ${LICENSE_NAME}
+#end
+-->
+<phpunit colors="true" strict="true" syntaxCheck="true" verbose="true">
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./coverage" charset="UTF-8" highlight="true" lowUpperBound="50" highLowerBound="90" />
+    </logging>
+    <testsuites>
+        <testsuite name="all">
+            <directory>test</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
