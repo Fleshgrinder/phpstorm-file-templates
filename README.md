@@ -32,8 +32,10 @@ The following is an example project configuration.
 
 Not all variables from the example are currently used in the provided template files, but maybe in the future.
 
-Afterwards compress the complete repository into a `.zip` file and rename it to `.jar`. Go to File > Import Settings… in
-your PhpStorm and select the previously generated `.jar` file.
+Afterwards compress the `fileTemplates` folder, `installed.txt`, and `IntelliJ IDEA Global Settings` into a `.zip` file
+and rename it to `.jar`. Go to File > Import Settings… in your PhpStorm and select the previously generated `.jar` file.
+It is important that the compressed file's content is not nested in any subfolders, check again is case PhpStorm tells
+you that the file does not contain any settings.
 
 That's it, you're good to go now.
 
