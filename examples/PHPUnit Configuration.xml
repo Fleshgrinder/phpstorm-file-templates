@@ -19,12 +19,11 @@ For more information, please refer to <http://unlicense.org/>
 -->
 
 <!--
-PHPUnit XML configuration for Master's Thesis Benchmarks Server.
+PHPUnit XML configuration for Awesome Project.
 
 AUTHOR: Richard Fussenegger <richard@fussenegger.info>
 COPYRIGHT: 2014 Richard Fussenegger
 LICENSE:
-SEE:
 SINCE: 0.1.0-dev
 -->
 <phpunit colors="true" strict="true" syntaxCheck="true" verbose="true">

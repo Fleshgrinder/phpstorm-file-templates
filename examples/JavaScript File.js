@@ -27,7 +27,7 @@
  * @license http://unlicense.org/ Unlicense
  * @since 0.1.0-dev
  */
-(function JavaScript(window, document) {
+(function JavaScriptFile(window, document) {
     "use strict";
 
 
