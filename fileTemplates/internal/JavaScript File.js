@@ -6,7 +6,7 @@
 /* jshint browser:true */
 
 #parse("JS Header.js")
-(function ${NAME}(window, document) {
+(function ${NAME.replaceAll("(?i) ([a-z0-9])", "$1")}(window, document) {
     "use strict";
 
 
