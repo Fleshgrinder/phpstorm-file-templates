@@ -11,18 +11,11 @@
 interface ${NAME}
 {
 
-
-    // ----------------------------------------------------------------------------------------------------------------- Constants
-
-
-    // @codingStandardsIgnoreStart
-    /** @type string Short class name. */
-    const name = "${NAME}";
-    // @codingStandardsIgnoreEnd
-
-
-    // ----------------------------------------------------------------------------------------------------------------- Methods
-
-
+    /**
+     * @todo Define public interface.
+     *
+     * @return $this
+     */
+    public function fn();
 
 }
