@@ -1,10 +1,6 @@
 /**
-#if(${NAMESPACE})
- * @coversDefaultClass ${NAMESPACE}
-#end
-#if(${NAMESPACE})
- * @usesDefaultClass ${NAMESPACE}
-#end
+ * @coversDefaultClass #if(${NAMESPACE})\\${NAMESPACE}#end\\${NAME.replaceAll("Test$", "")}
+ * @usesDefaultClass #if(${NAMESPACE})\\${NAMESPACE}#end\\${NAME.replaceAll("Test$", "")}
  * @author ${AUTHOR_NAME} <${AUTHOR_EMAIL}>
  * @copyright ${COPYRIGHT_YEAR} ${COPYRIGHT_OWNER}
 #if(${PROJECT_LICENSE})

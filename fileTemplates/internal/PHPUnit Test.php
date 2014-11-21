@@ -22,9 +22,22 @@ class ${NAME} extends \PHPUnit_Framework_TestCase
     // @codingStandardsIgnoreEnd
 
 
+    // ----------------------------------------------------------------------------------------------------------------- Properties
+
+
+    /** @type string The canonical absolute name of the class to test. */
+    protected $class = "#if(${NAMESPACE})\\${NAMESPACE.replace("\\", "\\\\")}#end\\${NAME.replaceAll("Test$", "")}";
+
+
     // ----------------------------------------------------------------------------------------------------------------- Tests
 
 
-
+    /**
+     * @covers ::
+     */
+    public function testSomething()
+    {
+        
+    }
 
 }
