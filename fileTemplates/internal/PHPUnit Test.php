@@ -26,7 +26,7 @@ class ${NAME} extends \PHPUnit_Framework_TestCase
 
 
     /** @type string The canonical absolute name of the class to test. */
-    protected $class = "#if(${NAMESPACE})\\${NAMESPACE.replace("\\", "\\\\")}#end\\${NAME.replaceAll("Test$", "")}";
+    protected $class = "#if(${NAMESPACE})\\\\${NAMESPACE.replaceAll("\\", "\\\\")}#end\\\\${NAME.replaceAll("Test$", "")}";
 
 
     // ----------------------------------------------------------------------------------------------------------------- Tests
